@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change color box</title>
+    <style>
+        body, html{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .color-box{
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .box1 {background-color: blueviolet;}
+        .box2 {background-color: green;}
+        .box3 {background-color: blue;}
+        .box4 {background-color: yellow;}
+        .box5 {background-color: pink;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="color-box box1"
+onclick="changeBackgroundColor('blueviolet')"></div>
+        <div class="color-box box2"
+onclick="changeBackgroundColor('green')"></div>
+        <div class="color-box box3"
+onclick="changeBackgroundColor('blue')"></div>
+        <div class="color-box box4"
+onclick="changeBackgroundColor('yellow')"></div>
+        <div class="color-box box5"
+onclick="changeBackgroundColor('pink')"></div>
+    </div>
+
+    <script>
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script> 
+</body>
+</html>
